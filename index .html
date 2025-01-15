@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width = device-width intitial scale = 1.0">
+        <title>Photo Gallery</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="modal.css"/>
+        </head>
+    <Body>
+        <header class="header">
+            <h1>CSS Photo Gallery</h1>
+        </header>
+        <main>
+            <div class="gallery">
+                <div class="card">
+                    <img src="1.jpg" alt="image1"/>
+                    <div class="card-content">
+                        <h2 class="card-title">Sunset</h2>
+                        <p class="card-description">A Breathtaking Scenery of Southern Light</p>
+                        <button class="card-button" onClick="openModal()">More Info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="2.jpg" alt="image1"/>
+                    <div class="card-content">
+                        <h2 class="card-title">Desert</h2>
+                        <p class="card-decription">A starry Night of Desert</p>
+                        <button class="card-button" onClick="openModal()">More Info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="3.jpg" alt="image1"/>
+                    <div class="card-content">
+                        <h2 class="card-title">Montain</h2>
+                        <p class="card-description">Beautiful Stars on a Icy Mountain</p>
+                        <button class="card-button" onClick="openModal()">More Info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="4.jpg" alt="image1"/>
+                    <div class="card-content">
+                        <h2 class="card-title">Night Sky</h2>
+                        <p class="card-description">Magnificent Night with Uncountable Stars on the Sky</p>
+                        <button class="card-button" onClick="openModal()">More Info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="5.jpg" alt="image1"/>
+                    <div class="card-content">
+                        <h2 class="card-title">Island</h2>
+                        <p class="card-description">The Land that looks like a Whale with Small Waves</p>
+                        <button class="card-button" onClick="openModal()">More Info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="6.jpg" alt="image1"/>
+                    <div class="card-content">
+                        <h2 class="card-title">Sea</h2>
+                        <p class="card-descrpition">The Land above the sea with the stunning set of the Sun</p>
+                        <button class="card-button" onClick="openModal()">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <button class="close-button" onClick="closeModal()">x</button>
+                <div class="modal-body">
+                    <img src="1.jpg" alt="image1" class="modal-image"/>
+                    <div class="model-text">
+                        <h2>Sunset</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ratione asperiores adipisci maiores provident voluptatibus tempore libero. Quo vero, repellat dolorem, quae incidunt ducimus provident ut ea nobis, natus quaerat.</p>
+                        <button class="download-button">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function openModal() {
+                const model =
+                document.getElementById('modal');
+                modal.style.display = "flex";
+            }
+            function closeModal() {
+                const model = document.getElementById('modal');
+                modal.style.display = 'none';
+            }
+        </script>
+    </Body>
+</html>

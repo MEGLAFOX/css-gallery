@@ -1,0 +1,86 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s;
+    position: relative;
+}
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 20px;
+}
+.modal-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.modal-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal-text h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+.modal-text p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #666;
+}
+.download-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #0a0a23;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 16px;
+}
+.download-button:hover {
+    background-color: #fdb347;
+}
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+.close-button:hover {
+    color: #f00;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
