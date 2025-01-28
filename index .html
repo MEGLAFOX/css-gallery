@@ -9,7 +9,23 @@
         </head>
     <Body>
         <header class="header">
-            <h1>CSS Photo Gallery</h1>
+             <nav class="navbar">
+                <div class="nav-brand">Photo Gallery</div>
+                <ul class="nav-list">
+                    <li>
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <button class="navbar-button" id="navBtn"aria-label="Toggle Button">
+                    ☰
+                </button>
+             </nav>
         </header>
         <main>
             <div class="gallery">
@@ -76,16 +92,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            function openModal() {
-                const model =
-                document.getElementById('modal');
-                modal.style.display = "flex";
-            }
-            function closeModal() {
-                const model = document.getElementById('modal');
-                modal.style.display = 'none';
-            }
-        </script>
+        <script src="script.js"></script>
     </Body>
 </html>
